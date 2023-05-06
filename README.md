@@ -145,5 +145,5 @@ I find that I am as comfortable that I thought for algorithms and Data Structure
 
 ## Author
 
-- Frontend Mentor - [@doukouss](https://www.frontendmentor.io/profile/doukouss)
+- Frontend Mentor - [@doukouss](https://www.frontendmentor.io/profile/doukous)
 
