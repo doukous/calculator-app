@@ -137,7 +137,7 @@ const handleCalculation = () => {
 
 ### Continued development
 
-I find that I am as comfortable that I thought for algorithms and Data Structures while building the calculator algorithm. I will definitely work on this. 
+I find that I am not as comfortable that I thought with algorithms and Data Structures while building the calculator algorithm. I will definitely work on this. 
 
 ### Useful resources
 
