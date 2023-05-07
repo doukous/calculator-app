@@ -152,9 +152,9 @@ const handleCalculation = () => {
     screenNumberValue = ''
     operationsValueList = []
 
-    if (typeof value === 'number' && !Number.isNaN(value) 
-        && !Number.isInteger(value)) {
+    if (Number.isFinite(finalResult)) {
         handleScreenUpdate(finalResult.toString())
+        screenEl.firstChild.scrollLeft = 0
     }
 
     else {
