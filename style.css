@@ -176,8 +176,7 @@ html, body {
   }
 }
 .screen p {
-  margin: 0;
-  padding: 0 0.5rem;
+  margin: 0 1rem;
   font-family: League-Spartan;
   font-size: 40px;
   overflow-x: auto;

@@ -161,7 +161,6 @@ const handleCalculation = () => {
         screenEl.innerHTML = '<p></p>'
         return alert('SyntaxError : Impossible to do this calculation.')
     }
-
 }
 
 const handleKeyboardClick = (keyboardKey) => {
