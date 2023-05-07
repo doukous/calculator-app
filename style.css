@@ -1,0 +1,279 @@
+@font-face {
+  font-family: League-Spartan;
+  src: url(./font/static/LeagueSpartan-Bold.ttf) format(truetype);
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.calculator {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.8rem;
+}
+.calculator.theme-1 {
+  background-color: hsl(222, 26%, 31%);
+}
+.calculator.theme-1 .header p {
+  color: white;
+}
+.calculator.theme-1 .toggle-theme > :last-child {
+  background-color: hsl(223, 31%, 20%);
+}
+.calculator.theme-1 .toggle-theme > :last-child input {
+  background-color: hsl(6, 63%, 50%);
+}
+.calculator.theme-1 .toggle-theme > :last-child input#theme-1 {
+  opacity: 1;
+}
+.calculator.theme-1 .toggle-theme > :last-child label {
+  color: white;
+}
+.calculator.theme-1 .screen {
+  background-color: hsl(224, 36%, 15%);
+}
+.calculator.theme-1 .screen p {
+  color: white;
+}
+.calculator.theme-1 .boutons {
+  background-color: hsl(223, 31%, 20%);
+}
+.calculator.theme-1 .boutons #reset, .calculator.theme-1 .boutons #equal, .calculator.theme-1 .boutons #delete {
+  color: white;
+}
+.calculator.theme-1 .boutons #equal {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 2px hsl(6, 70%, 34%);
+}
+.calculator.theme-1 .boutons #reset, .calculator.theme-1 .boutons #delete {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 2px hsl(224, 28%, 35%);
+}
+.calculator.theme-1 .boutons .number {
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  box-shadow: 0px 2px hsl(28, 16%, 65%);
+}
+.calculator.theme-2 {
+  background-color: hsl(0, 0%, 90%);
+}
+.calculator.theme-2 .header p {
+  color: hsl(60, 10%, 19%);
+}
+.calculator.theme-2 .toggle-theme > :last-child {
+  background-color: hsl(0, 5%, 81%);
+}
+.calculator.theme-2 .toggle-theme > :last-child input {
+  background-color: hsl(25, 98%, 40%);
+}
+.calculator.theme-2 .toggle-theme > :last-child input#theme-2 {
+  opacity: 1;
+}
+.calculator.theme-2 .toggle-theme > :last-child label {
+  color: hsl(60, 10%, 19%);
+}
+.calculator.theme-2 .screen {
+  background-color: hsl(0, 0%, 93%);
+}
+.calculator.theme-2 .screen p {
+  color: hsl(60, 10%, 19%);
+}
+.calculator.theme-2 .boutons {
+  background-color: hsl(0, 5%, 81%);
+}
+.calculator.theme-2 .boutons #reset, .calculator.theme-2 .boutons #equal, .calculator.theme-2 .boutons #delete {
+  color: white;
+}
+.calculator.theme-2 .boutons #equal {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0 2px hsl(25, 99%, 27%);
+}
+.calculator.theme-2 .boutons #reset, .calculator.theme-2 .boutons #delete {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 2px hsl(185, 58%, 25%);
+}
+.calculator.theme-2 .boutons .number {
+  background-color: hsl(45, 7%, 89%);
+  color: hsl(60, 10%, 19%);
+  box-shadow: 0 2px hsl(35, 11%, 61%);
+}
+.calculator.theme-3 {
+  background-color: hsl(268, 75%, 9%);
+}
+.calculator.theme-3 .header p {
+  color: hsl(52, 100%, 62%);
+}
+.calculator.theme-3 .toggle-theme > :last-child {
+  background-color: hsl(268, 71%, 12%);
+}
+.calculator.theme-3 .toggle-theme > :last-child input {
+  background-color: hsl(176, 100%, 44%);
+}
+.calculator.theme-3 .toggle-theme > :last-child input#theme-3 {
+  opacity: 1;
+}
+.calculator.theme-3 .toggle-theme > :last-child label {
+  color: hsl(52, 100%, 62%);
+}
+.calculator.theme-3 .screen {
+  background-color: hsl(268, 71%, 12%);
+}
+.calculator.theme-3 .screen p {
+  color: hsl(52, 100%, 62%);
+}
+.calculator.theme-3 .boutons {
+  background-color: hsl(268, 71%, 12%);
+}
+.calculator.theme-3 .boutons #reset, .calculator.theme-3 .boutons #equal, .calculator.theme-3 .boutons #delete {
+  color: white;
+}
+.calculator.theme-3 .boutons #equal {
+  background-color: hsl(176, 100%, 44%);
+  color: black;
+  box-shadow: 0 2px hsl(177, 92%, 70%);
+}
+.calculator.theme-3 .boutons #reset, .calculator.theme-3 .boutons #delete {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0 2px hsl(285, 91%, 52%);
+}
+.calculator.theme-3 .boutons .number {
+  background-color: hsl(268, 47%, 21%);
+  color: hsl(52, 100%, 62%);
+  box-shadow: 0 2px hsl(290, 70%, 36%);
+}
+
+.header {
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header p {
+  font-family: League-Spartan;
+  font-size: 1.7rem;
+}
+@media (max-width: 440px) {
+  .header {
+    width: 16rem;
+  }
+}
+
+.screen {
+  width: 25rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (max-width: 440px) {
+  .screen {
+    width: 16rem;
+  }
+}
+.screen p {
+  margin: 0;
+  padding: 0 0.5rem;
+  font-family: League-Spartan;
+  font-size: 40px;
+}
+
+.toggle-theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.toggle-theme > p {
+  font-size: 0.7rem;
+}
+.toggle-theme > :last-child {
+  border-radius: 0.8rem;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.1rem;
+       column-gap: 0.1rem;
+  position: relative;
+}
+.toggle-theme > :last-child label {
+  font-family: League-Spartan;
+  font-size: 0.7rem;
+}
+.toggle-theme > :last-child label[for=theme-1] {
+  position: absolute;
+  bottom: 24px;
+  left: 6px;
+}
+.toggle-theme > :last-child label[for=theme-2] {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+.toggle-theme > :last-child label[for=theme-3] {
+  position: absolute;
+  bottom: 24px;
+  left: 42px;
+}
+.toggle-theme input {
+  margin: 1px 2.2px;
+  padding: 0;
+  height: 12px;
+  width: 12px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  transform: translateY(-1%);
+  opacity: 0;
+}
+
+.boutons {
+  width: 25rem;
+  height: 20rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 440px) {
+  .boutons {
+    width: 16rem;
+    height: 25rem;
+  }
+}
+.boutons button {
+  padding: 0.4rem 0;
+  border-radius: 0.5rem;
+  border: 0;
+  font-family: League-Spartan;
+  font-size: 1.7rem;
+}
+@media (max-width: 440px) {
+  .boutons button {
+    border-radius: 0.2rem;
+    padding: 0.7rem 0;
+  }
+}
+.boutons #reset {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.boutons #equal {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.boutons #reset, .boutons #delete {
+  font-size: 1.1rem;
+}
+@media (max-width: 440px) {
+  .boutons #reset, .boutons #delete {
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=style.css.map */
