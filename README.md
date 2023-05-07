@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repository](https://github.com/doukous/calculator-app)
+- Live Site URL: [Live Site](https://doukous.github.io/calculator-app)
 
 ## My process
 
