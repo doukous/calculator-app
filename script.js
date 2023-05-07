@@ -237,5 +237,3 @@ inputElList.forEach(
     calcEl.classList.add(evt.target.id)
     })
 })
-
-screenEl.scrollLeft = screenEl.scrollWidth
